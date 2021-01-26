@@ -85,7 +85,7 @@ Mixed-Domain
         PoliceReport.class 
             ╠═ 🛂 pasport check status
             ╠═ 🛃 luggage check status 
-          X ╚═ 🔌 port number 8080
+          X ╚═ 🌐  “/reports-v2/{id}”
 
 Mixed-Instance
     Different responsability
