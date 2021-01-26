@@ -99,6 +99,7 @@ Mixed-Instance
 ```
 Logical (I/O)
     Each is an unrelated execution flow
+    The flow gets selected with the same triggering variable (event, selector...)
         Incomming events
             ╠═ f1("payment approval": Event) ✔️ -> 📢
             ╠═ f2("payment request": Event) 🎫 -> 🏦  
