@@ -58,3 +58,7 @@ Content Coupling:
           ?⤷  🏗️.👷.hasTiedSecurityBelt()
                  ?⤷  👷.🏗.setCredentials(🔑)
 ```
+
+## Cohesion
+A package that has its all inner parts working together is called cohesive.
+Adding code to a package shall alter its cohesion.
