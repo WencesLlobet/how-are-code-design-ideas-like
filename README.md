@@ -15,3 +15,46 @@ Kinds of packages (modules):
 📦 - ...
 
 This packages communicate to each other, they may hide some information to their outside users (data), they can also hide some implementation details (logic). 
+
+##  Coupling: If packages comunicate more than necesary they can be re-factored into a better design.
+
+📦🧶📦 - too coupled Classes/Files
+📦🧶📦 - too coupled Functions 
+📦🧶📦 - too coupled Packages
+📦🧶📦 - too coupled Services/Projects
+📦🧶📦 - ...
+
+
+### Types of Coupling
+```
+Message coupling (unavoidable)"
+    💡.turnOn()  
+
+Data Coupling (unavoidable):
+    🎚.dim(253)   
+
+Stamp Coupling:
+    createAndEmailGiftVoucher({22,💲,adress,🎨}) 
+    ⇩              
+    email(📦.giftVoucher())  
+
+Control Coupling:
+    🏗️.up() 🏗️.left()  🏗️.down()
+    ⇩   
+    👷.use(🏗️)  ... 👷.build(“wall”) 
+
+External Coupling:
+    🚞.🏢.scheduleCsv() ... 🚝.🏢.scheduleCsv()
+    ⇩                                               
+    🚞.🏣.canRunToday() ... 🚝.🏬.endingHour()            
+
+Commmon Coupling: 
+    🚞.🏢.schedule().setFault() ... 🚝.🏢.schedule().incidents() 
+    ⇩         
+    🚞.🏣.notifyFault() ... 🚝.🏬.canRun() 
+
+Content Coupling:
+        👷.🏗️.startEngine() 
+          ?⤷  🏗️.👷.hasTiedSecurityBelt()
+                 ?⤷  👷.🏗.setCredentials(🔑)
+```
