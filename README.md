@@ -33,12 +33,12 @@ Excess of comunication can be:
 ### Types of Coupling
 ```
 Message coupling (unavoidable)"
-    💡.turnOn()  
+    🏠.💡.turnOn()  
 
 Data Coupling (unavoidable):
-    🎚.dim(253)   
+    🏠.🎚.dim(253)   
 
-Stamp Coupling:
+Stamp/Structure Coupling:
     createAndEmailGiftVoucher({22,💲,adress,🎨}) 
     ⇩              
     email(📦.giftVoucher())  
