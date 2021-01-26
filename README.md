@@ -7,22 +7,22 @@ Readable code is faster to reason about. It is also more matainable and allows f
 Regardless of the technical implications code is (as written language) subdivided, it is modularized into packages.
 
 Kinds of packages (modules):
-📦 - Class/File
-📦 - Function
-📦 - Package/Folder
-📦 - Service/Project
-📦 - Line of code
-📦 - ...
+- 📦 - Class/File
+- 📦 - Function
+- 📦 - Package/Folder
+- 📦 - Service/Project
+- 📦 - Line of code
+- 📦 - ...
 
 This packages communicate to each other, they may hide some information to their outside users (data), they can also hide some implementation details (logic). 
 
 ##  Coupling: If packages comunicate more than necesary they can be re-factored into a better design.
 
-📦🧶📦 - too coupled Classes/Files
-📦🧶📦 - too coupled Functions 
-📦🧶📦 - too coupled Packages
-📦🧶📦 - too coupled Services/Projects
-📦🧶📦 - ...
+- 📦🧶📦 - too coupled Classes/Files
+- 📦🧶📦 - too coupled Functions 
+- 📦🧶📦 - too coupled Packages
+- 📦🧶📦 - too coupled Services/Projects
+- 📦🧶📦 - ...
 
 
 ### Types of Coupling
