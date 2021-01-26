@@ -16,7 +16,8 @@ Kinds of packages (modules):
 
 This packages communicate to each other, they may hide some information to their outside users (data), they can also hide some implementation details (logic). 
 
-##  Coupling: If packages comunicate more than necesary they can be re-factored into a better design.
+##  Coupling is when packages comunicate more than necesary.
+#### If packages comunicate more than necesary they can be re-factored into a better design.
 
 - 📦🧶📦 - too coupled Classes/Files
 - 📦🧶📦 - too coupled Functions 
@@ -24,6 +25,10 @@ This packages communicate to each other, they may hide some information to their
 - 📦🧶📦 - too coupled Services/Projects
 - 📦🧶📦 - ...
 
+Excess of comunication can be:
+- Directions of comunication (both packages telling and asking eachother)
+- To much comunication points (endpoints, public methods...)
+- Too much data in each comunication (passing a whole user details to know if it is from Europe)
 
 ### Types of Coupling
 ```
