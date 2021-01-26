@@ -71,3 +71,27 @@ Content Coupling:
 ## Cohesion
 A package that has its all inner parts working together is called cohesive.
 Adding code to a package shall alter its cohesion.
+### Class cohesion (according to attributes)
+```
+Mixed-Role
+    Same domain language, little related
+        PizzaToppings.class
+            ╠═ 🧀
+            ╠═ 🍅
+          X ╚═ 🌾  wheat
+
+Mixed-Domain
+    Same process, different tech. layer
+        PoliceReport.class 
+            ╠═ 🛂 pasport check status
+            ╠═ 🛃 luggage check status 
+          X ╚═ 🔌 port number 8080
+
+Mixed-Instance
+    Different responsability
+        ServingModality.class
+          X ╠═ 🧀
+            ╠═ 🛵 (courier number)
+            ╠═ 🪑 (table number)
+          X ╚═ 🍅
+```
