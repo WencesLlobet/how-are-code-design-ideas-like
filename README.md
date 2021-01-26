@@ -59,9 +59,13 @@ Commmon Coupling:
     🚂.🏣.notifyFault() ... 🚝.🏬.canRun() 
 
 Content Coupling:
-        👷.🏗️.startEngine() 
+        👷.🏗️.engine.startEngine() 
           ?⤷  🏗️.👷.hasTiedSecurityBelt()
                  ?⤷  👷.🏗.setCredentials(🔑)
+        ⇩   
+        👷 has 🏗️
+        🏗️ has not 👷
+        🏗️.engine is private -> 🏗️.start()
 ```
 
 ## Cohesion
