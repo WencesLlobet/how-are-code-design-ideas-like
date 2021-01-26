@@ -71,7 +71,7 @@ Content Coupling:
 ## Cohesion
 A package that has its all inner parts working together is called cohesive.
 Adding code/data to a package may alter its cohesion.
-### Class cohesion (according to attributes)
+### Class cohesion (according to attributes/data)
 ```
 Mixed-Role
     Same domain language, little related
@@ -94,4 +94,31 @@ Mixed-Instance
             ╠═ 🛵 (courier number)
             ╠═ 🪑 (table number)
           X ╚═ 🍅
+```
+### Class cohesion (according to functions/behaviour)
+```
+Logical (I/O)
+    Each is an unrelated execution flow
+        Incomming events
+            ╠═ f1("payment approval": Event) ✔️ -> 📢
+            ╠═ f2("payment request": Event) 🎫 -> 🏦  
+          X ╠═ serviceHealth() 🧰 -> 🟢                          
+            ╚═ f3("save user cc. details": Event) 💳  -> 👤
+
+Temporal - TBD
+Procedural -TBD
+
+Comunicational
+    Ones input of the other
+        Folder
+            ╠═ f() 💲 -> 📒 (ledger checks)
+            ╠═ f() 💲 -> 🕵️ (anti checks)
+          X ╚═ f() 📦 -> 🚚 (assign delivery)
+
+Sequential
+    Ones input of the other
+        Folder
+            ╠═ f() 🐄 -> 🥩
+            ╠═ f() 🥩 -> 🍔
+            ╚═ f() 🍔 -> 🍽️
 ```
