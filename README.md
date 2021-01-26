@@ -44,9 +44,9 @@ Stamp Coupling:
     email(📦.giftVoucher())  
 
 Control Coupling:
-    🏗️.up() 🏗️.left()  🏗️.down()
+    🏗️.up() 🏗️.left() 🏗️.down()
     ⇩   
-    👷.use(🏗️)  ... 👷.build(“wall”) 
+    👷.use(🏗️) ... 👷.build(“wall”) 
 
 External Coupling:
     🚞.🏢.scheduleCsv() ... 🚝.🏢.scheduleCsv()
@@ -54,9 +54,9 @@ External Coupling:
     🚞.🏣.canRunToday() ... 🚝.🏬.endingHour()            
 
 Commmon Coupling: 
-    🚞.🏢.schedule().setFault() ... 🚝.🏢.schedule().incidents() 
+    🚂.🏢.schedule().setFault() ... 🚝.🏢.schedule().incidents() 
     ⇩         
-    🚞.🏣.notifyFault() ... 🚝.🏬.canRun() 
+    🚂.🏣.notifyFault() ... 🚝.🏬.canRun() 
 
 Content Coupling:
         👷.🏗️.startEngine() 
