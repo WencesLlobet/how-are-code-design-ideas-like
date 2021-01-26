@@ -60,8 +60,8 @@ Commmon Coupling:
 
 Content Coupling:
     👷.🏗️.engine.startEngine() 
-        ?⤷  🏗️.👷.hasTiedSecurityBelt()
-                ?⤷  👷.🏗.setCredentials(🔑)
+         ⤷  🏗️.👷.hasTiedSecurityBelt()
+                 ⤷  👷.🏗.setCredentials(🔑)
     ⇩   
     👷 has 🏗️
     🏗️ has not 👷
@@ -70,7 +70,7 @@ Content Coupling:
 
 ## Cohesion
 A package that has its all inner parts working together is called cohesive.
-Adding code to a package shall alter its cohesion.
+Adding code/data to a package may alter its cohesion.
 ### Class cohesion (according to attributes)
 ```
 Mixed-Role
