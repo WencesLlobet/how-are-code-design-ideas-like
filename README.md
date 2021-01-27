@@ -51,23 +51,19 @@ Control Coupling:
     👷.use(🏗️) ... 👷.build(“wall”) 
 
 External Coupling:
-    🚞.🏢.scheduleCsv() ... 🚝.🏢.scheduleCsv()
+    🚂.DB.scheduleTableAsJson() ... 🚝.DB.scheduleTableAsJson()
     ⇩                                               
-    🚞.🏣.canRunToday() ... 🚝.🏬.endingHour()            
+    🚂.🏣.canRunToday() ... 🚝.🏬.endingHour()            
 
 Commmon Coupling: 
-    🚂.🏢.schedule().setFault() ... 🚝.🏢.schedule().incidents() 
+    🚂.DB.execSQL("INSERT Faults ...id=1347") ... 🚝.DB.().getFaultsAsJson() 
     ⇩         
-    🚂.🏣.notifyFault() ... 🚝.🏬.canRun() 
+    🚂.🏣.notifyFault(1347) ... 🚝.🏬.canRun() 
 
 Content Coupling:
     👷.🏗️.engine.startEngine() 
-         ⤷  🏗️.👷.hasTiedSecurityBelt()
-                 ⤷  👷.🏗.setCredentials(🔑)
     ⇩   
-    👷 has 🏗️
-    🏗️ has not 👷
-    🏗️.engine is private -> 🏗️.start()
+    🏗️.engine is private -> 👷.🏗️.start()
 ```
 
 ## Cohesion
