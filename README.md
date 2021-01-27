@@ -4,7 +4,7 @@
 
 Readable code is faster to reason about. It is also more maintainable and allows faster onboarding and entrustment of tasks.
 
-Regardless of the technical implications code is (as written language) subdivided, it is modularized into packages.
+Regardless of the technical factors code is like written language: it has to be subdivided (lines, paragraphs, chapters...) we say that code is modularized into packages.
 
 Kinds of packages (modules):
 - 📦 - Class/File
@@ -14,10 +14,12 @@ Kinds of packages (modules):
 - 📦 - Line of code
 - 📦 - ...
 
-These packages communicate with each other, they may hide some information to their outside users (data), they can also hide some implementation details (logic). 
+These packages communicate with each other, they may hide some information to their outside users (data), they can also hide some implementation details (behaviour/logic). 
 
 ##  Coupling is when packages communicate more than necessary.
 #### If packages communicate more than necessary they can be re-factored into a better design.
+
+Because coupling affects any kind of package we could find coupling problem in 
 
 - 📦🧶📦 - too coupled Classes/Files
 - 📦🧶📦 - too coupled Functions 
@@ -26,9 +28,9 @@ These packages communicate with each other, they may hide some information to th
 - 📦🧶📦 - ...
 
 Excess of communication can be:
-- Directions of communication (both packages telling and asking each other)
 - Too many communication points (endpoints, public methods...)
 - Too much data in each communication (passing whole user details to know if it is from Europe)
+- Directions of communication (both packages telling and asking each other)
 
 ### Types of Coupling
 ```
