@@ -107,10 +107,18 @@ Logical (I/O)
             ╚═ f3("save user cc. details": Event) 💳  -> 👤
 
 Temporal - TBD
+        WeeklyTasks 
+            ╠═ calculateWeekHighscore() 📒 -> 🏅
+            ╠═ removeOldUsersFromDb()  👥 -> 👤                
+         !! ╚═ signInUser()  👤 -> 📒
 
 
-
-Procedural -TBD
+Procedural
+        PurchaseSequence
+            ╠═ validateUser() 👤 ->  🟢 
+            ╠═ processPayment()  💲 -> 📒            
+         !! ╠═ renderDailyOffersBanners()  📦 -> 🏳️                  
+            ╚═ sendPurchaseOrdersToSupplier() 🎫 -> 🚚
 
 Communicational
     Ones input of the other
@@ -124,5 +132,6 @@ Sequential
         Folder
             ╠═ f() 🐄 -> 🥩
             ╠═ f() 🥩 -> 🍔
+         !! ╠═ f() 🌾 -> 🍚
             ╚═ f() 🍔 -> 🍽️
 ```
