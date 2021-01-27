@@ -78,22 +78,22 @@ Mixed-Role
         PizzaToppings.class
             ╠═ 🧀
             ╠═ 🍅
-          X ╚═ 🌾  wheat
+         !! ╚═ 🌾  wheat
 
 Mixed-Domain
     Same process, different tech. layer
         PoliceReport.class 
             ╠═ 🛂 pasport check status
             ╠═ 🛃 luggage check status 
-          X ╚═ 🌐  “/reports-v2/{id}”
+         !! ╚═ 🌐  “/reports-v2/{id}”
 
 Mixed-Instance
     Different responsability
         ServingModality.class
-          X ╠═ 🧀
+         !! ╠═ 🧀
             ╠═ 🛵 (courier number)
             ╠═ 🪑 (table number)
-          X ╚═ 🍅
+         !! ╚═ 🍅
 ```
 ### Class cohesion (according to functions/behaviour)
 ```
@@ -103,10 +103,13 @@ Logical (I/O)
         Incomming events
             ╠═ f1("payment approval": Event) ✔️ -> 📢
             ╠═ f2("payment request": Event) 🎫 -> 🏦  
-          X ╠═ serviceHealth() 🧰 -> 🟢                          
+         !! ╠═ serviceHealth() 🧰 -> 🟢                          
             ╚═ f3("save user cc. details": Event) 💳  -> 👤
 
 Temporal - TBD
+
+
+
 Procedural -TBD
 
 Communicational
@@ -114,7 +117,7 @@ Communicational
         Folder
             ╠═ f() 💲 -> 📒 (ledger checks)
             ╠═ f() 💲 -> 🕵️ (anti checks)
-          X ╚═ f() 📦 -> 🚚 (assign delivery)
+         !! ╚═ f() 📦 -> 🚚 (assign delivery)
 
 Sequential
     Ones input of the other
