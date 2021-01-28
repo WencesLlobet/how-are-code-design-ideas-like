@@ -1,8 +1,6 @@
 ## Code design concepts
 
-## Code design is how readable is code 
-
-Readable code is faster to reason about. It is also more maintainable and allows faster onboarding and entrustment of tasks.
+## Packages
 
 Regardless of the technical factors code is like written language: it has to be subdivided (lines, paragraphs, chapters...) we say that code is modularized into packages.
 
