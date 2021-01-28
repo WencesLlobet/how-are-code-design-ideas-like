@@ -49,14 +49,14 @@ Control Coupling:
     👷.use(🏗️) ... 👷.build(“wall”) 
 
 External Coupling:
-    🚂.DB.scheduleTableAsJson() ... 🚝.DB.scheduleTableAsJson()
+    🚂.centralDB.scheduleTableAsJson() ... 🚝.centralDB.scheduleTableAsJson()
     ⇩                                               
-    🚂.🏣.canRunToday() ... 🚝.🏬.endingHour()            
+    🚂.🏣service1.canRunToday() ... 🚝.🏬service2.endingHour()            
 
 Commmon Coupling: 
-    🚂.DB.execSQL("INSERT Faults ...id=1347") ... 🚝.DB.().getFaultsAsJson() 
+    🚂.centralDB.execSQL("INSERT Faults ...id=1347") ... toJson(🚝.centralDB.allFaultsTable()) 
     ⇩         
-    🚂.🏣.notifyFault(1347) ... 🚝.🏬.canRun() 
+    🚂.🏣service1.notifyFault(1347) ... 🚝.🏬service2.canRun() 
 
 Content Coupling:
     👷.🏗️.engine.startEngine() 
